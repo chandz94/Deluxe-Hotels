@@ -1,1 +1,157 @@
 # Deluxe-Hotels
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deluxe Hotels</title>
+  <!-- Font & CSS Reset -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #000;
+      --accent-color: #cfa670;
+      --font-heading: 'Libre Baskerville', serif;
+      --font-body: 'Work Sans', sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: var(--font-body);
+      color: #333;
+      background: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      color: var(--accent-color);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background-color: #111;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1542317854-cc041b2496f5');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      font-family: var(--font-heading);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    section {
+      padding: 4em 2em;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h3 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 1em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 2em;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .card h4 {
+      font-family: var(--font-heading);
+      color: var(--accent-color);
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2em 1em;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deluxe Hotels</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Rooms</a>
+    <a href="#">Restaurant</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="hero">
+    <h2>Your Luxury Escape Awaits</h2>
+  </div>
+
+  <section>
+    <h3>About Deluxe</h3>
+    <p>Deluxe Hotels offers a carefully curated collection of the world's most stylish luxury hotels. Our expert team of travel curators personally hand-pick each property to ensure it meets our gold standard of comfort, atmosphere, and service.</p>
+  </section>
+
+  <section>
+    <h3>Our Services</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Concierge 24/7</h4>
+        <p>Our around-the-clock concierge is available for all your needs, from restaurant bookings to spa appointments.</p>
+      </div>
+      <div class="card">
+        <h4>Fine Dining</h4>
+        <p>Enjoy gourmet meals prepared by top chefs, with options for room service or elegant dining on-site.</p>
+      </div>
+      <div class="card">
+        <h4>Private Transfers</h4>
+        <p>Luxury transportation to and from your destination for a stress-free travel experience.</p>
+      </div>
+      <div class="card">
+        <h4>Spa & Wellness</h4>
+        <p>Indulge in relaxing treatments and holistic wellness experiences at our on-site spa facilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deluxe Hotels. Designed with love for luxury explorers.</p>
+  </footer>
+</body>
+</html>
